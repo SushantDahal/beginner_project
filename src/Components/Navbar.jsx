@@ -20,11 +20,11 @@ function Navbar() {
         <li className="p-4">Company</li>
       </ul>
       <div onClick={handleNav} className="block md:hidden">
-        {!nav ? <AiOutlineClose size={"30"} /> : <AiOutlineMenu size={"30"} />}
+        {nav ? <AiOutlineClose size={"30"} /> : <AiOutlineMenu size={"30"} />}
       </div>
       <div
         className={
-          !nav
+          nav
             ? "fixed left-0 top-0 w-[50%] h-full border-r bg-[#000300] border-r-gray-900 ease-in-out duration-500"
             : "fixed left-[-100%]  "
         }
