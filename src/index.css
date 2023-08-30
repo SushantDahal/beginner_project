@@ -15,3 +15,13 @@ body {
   background-color: black;
   font-family: "Lato", sans-serif;
 }
+li:hover {
+  color: red;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+button:hover {
+  transform: scale(1.2);
+  background-color: #0c7956;
+  transition: ease-in 0.1s;
+}
